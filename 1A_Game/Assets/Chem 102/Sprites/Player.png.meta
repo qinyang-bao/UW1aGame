@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 17715957b67b62e46b6560ea5bdf3150
+timeCreated: 1514513016
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Head
+    21300002: Hat
+    21300004: RHand
+    21300006: LHand
+    21300008: Iclicker_Fire
+    21300010: Tool
+    21300012: RArm
+    21300014: LArm
+    21300016: Body
+    21300018: RLegUpper
+    21300020: LLegUpper
+    21300022: RLegLower
+    21300024: LLegLower
+    21300026: RFoot
+    21300028: LFoot
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 19
+        width: 7
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5880086, y: 0.09295893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hat
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 26
+        width: 9
+        height: 4
+      alignment: 9
+      pivot: {x: 0.4217701, y: 0.21397114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RHand
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 19
+        width: 3
+        height: 3
+      alignment: 9
+      pivot: {x: 0.5293363, y: 0.85203487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LHand
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 3
+        height: 3
+      alignment: 9
+      pivot: {x: 0.49999937, y: 0.8813712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Iclicker_Fire
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 19
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Tool
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 14
+        width: 11
+        height: 3
+      alignment: 9
+      pivot: {x: 0.10796061, y: 0.38265514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RArm
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 9
+        width: 3
+        height: 8
+      alignment: 9
+      pivot: {x: 0.49999952, y: 0.8630364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LArm
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 10
+        width: 3
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5293357, y: 0.8960395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Body
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1
+        width: 7
+        height: 11
+      alignment: 9
+      pivot: {x: 0.4874273, y: 0.91604155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RLegUpper
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 3
+        height: 5
+      alignment: 9
+      pivot: {x: 0.52933574, y: 0.74642456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LLegUpper
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 3
+        height: 5
+      alignment: 9
+      pivot: {x: 0.52933615, y: 0.7288228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RLegLower
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 3
+        height: 5
+      alignment: 9
+      pivot: {x: 0.55867195, y: 0.7288228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LLegLower
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3
+        width: 3
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.78162813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RFoot
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 4
+        height: 2
+      alignment: 9
+      pivot: {x: 0.34598476, y: 0.76402587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LFoot
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 4
+        height: 2
+      alignment: 9
+      pivot: {x: 0.3679862, y: 0.7200215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

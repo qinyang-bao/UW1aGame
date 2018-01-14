@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Feet
+  - Tool
+  - EnemyAttack
+  - ToolAttack
+  - IclickerAttack
+  - Enemy
+  - PlayerAttack
+  - EnemyAttack_one
+  - EnemyAttack_two
+  - Wall
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Structures
+  - Items
+  - GridLine
+  - Player
+  - Enemies
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3230539203
+    locked: 0
+  - name: Ground
+    uniqueID: 445443927
+    locked: 0
+  - name: Strcutures
+    uniqueID: 831975067
+    locked: 0
+  - name: Items
+    uniqueID: 2094766751
+    locked: 0
+  - name: Enemies
+    uniqueID: 2578085447
+    locked: 0
+  - name: Player
+    uniqueID: 1647603217
+    locked: 0
