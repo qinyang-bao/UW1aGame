@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class AndrewController : MonoBehaviour {
 
-	public GameObject[] CorrectPath;
-	public Transform startLocation;
+	public List<GameObject> CorrectPath = new List<GameObject>();
+	//public Transform startLocation;
 
 	private int currentIndex = 0;
 
-	private Animator animator;
-	private bool fly;
 
 	public float speed;
 	public float y_offset;
@@ -19,8 +17,8 @@ public class AndrewController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.position = startLocation.position;
-		animator = GetComponent<Animator> ();
+		//transform.position = startLocation.position;
+		transform.position = CorrectPath[0].transform.position;
 	}
 	
 	// Update is called once per frame
@@ -29,14 +27,11 @@ public class AndrewController : MonoBehaviour {
 			Vector2 move_to = new Vector2 (CorrectPath [currentIndex + 1].transform.position.x, CorrectPath [currentIndex + 1].transform.position.y + y_offset);
 			transform.position = Vector2.MoveTowards (transform.position, move_to, speed*Time.deltaTime);
 			currentIndex++;
-			fly = true;
 		}
 
 		if (transform.position.x - CorrectPath [currentIndex + 1].transform.position.x <= TOL) {
-			fly = false;
+			CorrectPath [currentIndex].SetActive (true);
 		}
-
-		animator.SetBool ("Fly", fly);
 
 	}
 

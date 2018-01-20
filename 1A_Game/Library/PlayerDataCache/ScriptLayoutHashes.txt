@@ -19,6 +19,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 9ca6347af5ceb6b0d1c105af31b6722e UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 e1ff970319fa33ba4daa3ef83c5282a8 Assembly-CSharp.dll:.ToolController
 fd32f4262a66ef9c430b7f80963ff4b3 Assembly-CSharp.dll:.IclickerMultipleChoiceController
+650af12ceb106342a5df48e4c472cc30 Assembly-CSharp.dll:.MathCameraController
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -124,6 +125,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 f1e038dd9b01b425c599c897d9f5edce Assembly-CSharp.dll:.WallManager
 821c7af251052e91a33f5889667d84d9 Assembly-CSharp.dll:.ExitController
+13bd4027e73ce26ef9a94b0ad95beac8 Assembly-CSharp.dll:.AndrewController
 41be35574321be32b809b58617c106db Assembly-CSharp.dll:.BoardManager
 16c0fba0c61342d6d48084298ed6c454 Assembly-CSharp.dll:.AlphabetController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
@@ -146,6 +148,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 084d791b061091465185d66de77b116a Assembly-CSharp.dll:.IclickerRequirementController
 dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.Tests
+3193f89a268a3b52310bf68cb52aa089 Assembly-CSharp.dll:.PhysicalObject
 24bb26e7da03092690ef38ebcd7ec1c0 Assembly-CSharp.dll:.CameraController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController

@@ -38,7 +38,6 @@ public class PhysicalObject : MonoBehaviour {
 		targetedVelocity = Vector2.zero;
 		ComputeVelocity ();
 		GetOtherInput ();
-
 	}
 
 

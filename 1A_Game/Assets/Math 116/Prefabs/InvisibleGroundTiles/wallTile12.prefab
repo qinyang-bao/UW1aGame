@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4829794502818220}
   - component: {fileID: 212520677270172392}
   - component: {fileID: 61066289568590782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wallTile12
-  m_TagString: Untagged
+  m_TagString: Variables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

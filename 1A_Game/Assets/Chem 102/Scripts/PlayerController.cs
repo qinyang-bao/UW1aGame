@@ -115,7 +115,7 @@ public class PlayerController : PhysicsObject {
 
 		animator.SetBool ("grounded", grounded);
 		animator.SetBool ("jump", jump);
-		animator.SetFloat ("speed", Mathf.Abs(velocity.x));
+		animator.SetFloat ("speed", velocity.x);
 
 		targetedVelocity = move * maxSpeed;
 		targetedVelocity.x *= Xmultiplier;
