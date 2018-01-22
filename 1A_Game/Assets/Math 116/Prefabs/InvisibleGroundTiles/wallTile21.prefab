@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4920223320952484}
   - component: {fileID: 212741278931339548}
   - component: {fileID: 61659142574300918}
+  - component: {fileID: 114946160749361438}
   m_Layer: 9
   m_Name: wallTile21
   m_TagString: Variables
@@ -36,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1694319375321226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2394037, y: 0.5435996, z: 0}
-  m_LocalScale: {x: 0.625, y: 0.625, z: 1}
+  m_LocalScale: {x: 2.478898, y: 2.478898, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,6 +67,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
+--- !u!114 &114946160749361438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694319375321226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc229e3031d70bd4d84f0cfa630ed586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212741278931339548
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -97,8 +109,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 831975067
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300028, guid: 96895068a7af2ad4c83dd4b3ce865a17, type: 3}
   m_Color: {r: 0.58823526, g: 0.5752595, b: 0.5752595, a: 1}

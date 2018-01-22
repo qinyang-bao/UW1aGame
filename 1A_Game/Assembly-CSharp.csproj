@@ -78,9 +78,12 @@
      <Compile Include="Assets\Chem 102\Scripts\WallManager.cs" />
      <Compile Include="Assets\Chem 102\SourceImages\GamesPlusJames_Unity_Character_Animation\Player.cs" />
      <Compile Include="Assets\Math 116\Scripts\AndrewController.cs" />
+     <Compile Include="Assets\Math 116\Scripts\FeetController.cs" />
      <Compile Include="Assets\Math 116\Scripts\InvisibleTileManager.cs" />
      <Compile Include="Assets\Math 116\Scripts\MathCameraController.cs" />
      <Compile Include="Assets\Math 116\Scripts\PhysicalObject.cs" />
+     <Compile Include="Assets\Math 116\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Math 116\Scripts\TileTrigger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Coding/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

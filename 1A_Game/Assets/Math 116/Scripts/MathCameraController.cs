@@ -23,24 +23,27 @@ public class MathCameraController : MonoBehaviour {
 
 	void Update () {
 
-		if (po.get_velocity().y <= 0)
+		if (po.get_velocity().y < 0)
 			is_falling = true;
 
 		if (is_falling) {
-			transform.position = player.position;
+			// to adjust for different reference of origins for the player and the camera 
+			// because I messed up when making the player into a prefab and did not think about the world space and relative space at all
+			// this should be fixed later if possible
+			transform.position = player.position + new Vector3 (-41f, -3f, 0f);
 			transform.position = new Vector3 (transform.position.x, transform.position.y, -10f);
 		} else {
-			xDifference = Mathf.Abs (player.transform.position.x - transform.position.x);
-			yDiffernece = Mathf.Abs (player.transform.position.y - transform.position.y);
+			xDifference = Mathf.Abs (player.transform.position.x -41f - transform.position.x);
+			yDiffernece = Mathf.Abs (player.transform.position.y -3f - transform.position.y);
 
 			if (xDifference >= movementThreshold) {
-				moveTemp = player.transform.position;
+				moveTemp = player.transform.position + new Vector3 (-41f, -3f, 0f);
 				transform.position = Vector2.MoveTowards (transform.position, moveTemp, speed_x * Time.deltaTime);
 				transform.position = new Vector3 (transform.position.x, transform.position.y, -10f);
 			}
 
 			if (yDiffernece >= movementThreshold) {
-				moveTemp = player.transform.position;
+				moveTemp = player.transform.position + new Vector3 (-41f, -3f, 0f);
 				transform.position = Vector2.MoveTowards (transform.position, moveTemp, speed_y * Time.deltaTime);
 				transform.position = new Vector3 (transform.position.x, transform.position.y, -10f);
 			}

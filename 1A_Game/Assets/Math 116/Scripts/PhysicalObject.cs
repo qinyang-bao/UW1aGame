@@ -20,6 +20,7 @@ public class PhysicalObject : MonoBehaviour {
 	protected const float shellRadius = 0.01f;
 
 
+
 	void OnEnable()
 	{
 		rb2d = GetComponent<Rigidbody2D> ();
@@ -103,10 +104,11 @@ public class PhysicalObject : MonoBehaviour {
 
 		rb2d.position = rb2d.position + move.normalized * distance;
 	}
-
+		
 
 	public Vector2 get_velocity()
 	{
 		return velocity;
 	}
+		
 }

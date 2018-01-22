@@ -5,37 +5,46 @@ using Random = UnityEngine.Random;
 
 public class InvisibleTileManager : MonoBehaviour {
 
-	public GameObject[] tiles;
-	//public AndrewController andrew;
-	private bool is_curr_op = false;
+	public GameObject[] operators;
+	public GameObject[] variables;
+	//public AndrewController andrewScript;
 	public bool is_first_tile;
+	//public int path_index;
 
 	public int length;
 
-	void Start () {
-		//andrew.CorrectPath.Add (gameObject);
+	/*
+	void Awake () {
+		andrewScript.CorrectPath.
+		Insert(path_index, gameObject);
+	}
+	*/
+
+	void Start()
+	{
 		DrawWall (transform.position, length);
 
-
-		if (!is_first_tile) {
-			gameObject.GetComponent<SpriteRenderer> ().enabled = false;
-		}
+		gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 	}
+		
 
-	 void LayoutObjectAtRandom(GameObject[] tileArray, int ObjectCount, Vector3 start_pos)
+	void LayoutObjectAtRandom(GameObject[] operatorArray, GameObject[] variableArray, int ObjectCount, Vector3 start_pos)
 	{
 		
 		for (int count = 0; count < ObjectCount; count++) {
 			Vector3 position = new Vector3 (start_pos.x + count, start_pos.y);
-			GameObject tileChoice = tileArray [Random.Range (0, tileArray.Length)];
-
-			//make sure operator and variables alternate one by one
-			if (count == 0) {
-				if (tileChoice.gameObject.CompareTag ("Operators")) {
-					is_curr_op = true;
-				} else {
-					is_curr_op = false;
-				}
+			GameObject tileChoice;
+			if (count % 2 == 0 || count == 0) {
+				tileChoice = variableArray [Random.Range (0, variableArray.Length)];
+			} else {
+				tileChoice = operatorArray [Random.Range (0, operatorArray.Length)];
+			}
+				
+			/*
+			//make sure operators and variables alternate one by one
+			if (count > 0) {
+				tileChoice = tileArray [Random.Range (0, tileArray.Length)];
+				is_curr_op = false;
 			} else {
 				if (is_curr_op && tileChoice.gameObject.CompareTag ("Operators")) {
 					while (tileChoice.gameObject.CompareTag ("Operators"))
@@ -46,17 +55,19 @@ public class InvisibleTileManager : MonoBehaviour {
 						tileChoice = tileArray [Random.Range (0, tileArray.Length)];
 					is_curr_op = true;
 				}
-
-				//except for the first tile, all other tiles are invisible
-				tileChoice.GetComponent<SpriteRenderer> ().enabled = false;
 			}
-			Instantiate (tileChoice, position, Quaternion.identity);
-		}
+			*/
+			GameObject instance = Instantiate (tileChoice, position, Quaternion.identity);
 
+			//except for the first tile of the entire game, all other tiles are invisible
+			instance.GetComponent<SpriteRenderer> ().enabled = false;
+			if(is_first_tile && count == 0)
+				instance.GetComponent<SpriteRenderer> ().enabled = true;
+		}
 	}
 
-	 void DrawWall(Vector3 start_pos, int length) 
+	void DrawWall(Vector3 start_pos, int length) 
 	{
-		LayoutObjectAtRandom (tiles, length, start_pos);
+		LayoutObjectAtRandom (operators, variables, length, start_pos);
 	}
 }

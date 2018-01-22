@@ -16,6 +16,7 @@ TagManager:
   - Wall
   - Operators
   - Variables
+  - Boundaries
   layers:
   - Default
   - TransparentFX
