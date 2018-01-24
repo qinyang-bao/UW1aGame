@@ -110,5 +110,10 @@ public class PhysicalObject : MonoBehaviour {
 	{
 		return velocity;
 	}
+
+	public bool is_grounded()
+	{
+		return grounded;
+	}
 		
 }

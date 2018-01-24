@@ -79,6 +79,7 @@
      <Compile Include="Assets\Chem 102\SourceImages\GamesPlusJames_Unity_Character_Animation\Player.cs" />
      <Compile Include="Assets\Math 116\Scripts\AndrewController.cs" />
      <Compile Include="Assets\Math 116\Scripts\FeetController.cs" />
+     <Compile Include="Assets\Math 116\Scripts\gameControl.cs" />
      <Compile Include="Assets\Math 116\Scripts\InvisibleTileManager.cs" />
      <Compile Include="Assets\Math 116\Scripts\MathCameraController.cs" />
      <Compile Include="Assets\Math 116\Scripts\PhysicalObject.cs" />

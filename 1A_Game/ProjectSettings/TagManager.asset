@@ -17,6 +17,7 @@ TagManager:
   - Operators
   - Variables
   - Boundaries
+  - Ground
   layers:
   - Default
   - TransparentFX

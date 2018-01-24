@@ -8,7 +8,7 @@ public class PlayerControl : PhysicalObject {
 	public float maxSpeed = 5;
 
 	//private SpriteRenderer spriteRenderer;
-	private bool die = false;
+	//private bool die = false;
 	private bool jump;
 
 	private Animator animator;
