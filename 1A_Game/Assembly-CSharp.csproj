@@ -85,6 +85,8 @@
      <Compile Include="Assets\Math 116\Scripts\PhysicalObject.cs" />
      <Compile Include="Assets\Math 116\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Math 116\Scripts\TileTrigger.cs" />
+     <Compile Include="Assets\MathExitController.cs" />
+     <Compile Include="Assets\MathStartController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Coding/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

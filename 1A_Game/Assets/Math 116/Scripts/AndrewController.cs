@@ -6,6 +6,7 @@ public class AndrewController : MonoBehaviour {
 
 	//public List<GameObject> CorrectPath = new List<GameObject>();
 	public GameObject [] CorrectPath;
+	public GameObject Exit;
 	private gameControl gc;
 	public UnityEngine.UI.Text andrewText;
 	public Transform player;
@@ -34,8 +35,7 @@ public class AndrewController : MonoBehaviour {
 
 	void Update () {
 
-		if (!reached_end) {
-			if (CorrectPath [currentIndex].activeSelf) {
+		if (!reached_end && CorrectPath [currentIndex].activeSelf) {
 				travelling = true;
 				currentIndex++;
 			}
@@ -53,6 +53,7 @@ public class AndrewController : MonoBehaviour {
 			//if the player is close enough, move to the next position
 			if (Mathf.Abs (player.position.x - (transform.position.x + 41f)) <= PLAYER_TOL && !travelling) {
 				CorrectPath [currentIndex].SetActive (true);
+				CorrectPath [currentIndex].GetComponent<SpriteRenderer> ().enabled = true;
 			}
 
 			if (currentIndex == CorrectPath.Length - 1 && !travelling) {
@@ -61,8 +62,10 @@ public class AndrewController : MonoBehaviour {
 					andrewText.text = "You are about to pass MATH116! I hope you enjoyed my guidance!";
 				else
 					andrewText.text = "Sorry, you are about to fail MATH116! I hope I can guide you better the next time!";
+				
+			Exit.gameObject.SetActive (true);
 			}
-		}
+		
 	}
 
 

@@ -8,8 +8,9 @@ public class FeetController : MonoBehaviour {
 	private gameControl gc;
 
 	private PhysicalObject player_object;
-	private bool is_falling = false, on_boundary = false, start_counting = false;
+	private bool is_falling = false, on_boundary = false;// start_counting = false;
 	private Vector2 fall_position = new Vector2 (0f, 0f);
+	//private float prev_y = 0f, curr_y = 0f, change_y = 0f,  y_thres = -0.5f;
 	public int pulishment = 10;
 	public float curr_t = 0f;
 	public float delay_time = 1f;
@@ -25,15 +26,19 @@ public class FeetController : MonoBehaviour {
 
 	void Update()
 	{
-		if (player_object.get_velocity ().y < 0 && !is_falling && !on_boundary) {
+		//curr_y = player.transform.position.y;
+		//change_y = curr_y - prev_y;
+		//prev_y = curr_y;
+		if (player_object.get_velocity ().y < 0 && !is_falling && !on_boundary) { //change_y < y_thres && !is_falling && !on_boundary) {
 			is_falling = true;
 			fall_position = player.transform.position;
 		}
 
 		if (on_boundary && !is_falling) 
 		{
+			//Debug.Log ("on Ground!");
+			//Debug.Log (fall_position);
 			/*
-			Debug.Log ("Yes");
 			if (!start_counting) {
 				start_counting = true;
 			}
@@ -51,10 +56,9 @@ public class FeetController : MonoBehaviour {
 				}
 			}
 			*/
-
 			player.transform.position = fall_position;
 			on_boundary = false;
-			is_falling = false;
+//			is_falling = false;
 		}
 	}
 	
@@ -65,7 +69,7 @@ public class FeetController : MonoBehaviour {
 			is_falling = false;
 		}
 
-		if (other.gameObject.CompareTag ("Boundaries")) {
+		else if (other.gameObject.CompareTag ("Boundaries")) {
 			//animator.SetBool ("Die", true);
 			on_boundary = true;
 			is_falling = false;

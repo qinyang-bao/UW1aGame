@@ -61,14 +61,14 @@ public class ExitController : MonoBehaviour {
 				{
 					SceneManager.LoadSceneAsync (next_level_index);
 				}
-				Destroy (gameObject);
+				//Destroy (gameObject);
 			} else {
 				ExitText.text = "Sorry, you have failed Chem102 with a grade of: " + gc.score.ToString () + " !" + " Press 'R' to repeat!";
 				if (Input.GetKeyDown (KeyCode.R)) 
 				{
 					SceneManager.LoadSceneAsync (SceneManager.GetActiveScene ().name);
 				}
-				Destroy (gameObject);
+				//Destroy (gameObject);
 			}
 
 

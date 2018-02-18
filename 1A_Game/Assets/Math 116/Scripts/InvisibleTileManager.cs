@@ -12,6 +12,7 @@ public class InvisibleTileManager : MonoBehaviour {
 	//public int path_index;
 
 	public int length;
+	public bool to_right = true;
 
 	/*
 	void Awake () {
@@ -32,7 +33,12 @@ public class InvisibleTileManager : MonoBehaviour {
 	{
 		
 		for (int count = 0; count < ObjectCount; count++) {
-			Vector3 position = new Vector3 (start_pos.x + count, start_pos.y);
+			Vector3 position = new Vector3 ();
+			if (to_right) {
+				 position = new Vector3 (start_pos.x + count, start_pos.y);
+			} else {
+				 position = new Vector3 (start_pos.x - count, start_pos.y);
+			}
 			GameObject tileChoice;
 			if (count % 2 == 0 || count == 0) {
 				tileChoice = variableArray [Random.Range (0, variableArray.Length)];

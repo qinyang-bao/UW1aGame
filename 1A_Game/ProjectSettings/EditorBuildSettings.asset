@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Chemistry.unity
     guid: efd38a4e87020b64ea44c78aa7c71317
+  - enabled: 1
+    path: Assets/_Scenes/Math116.unity
+    guid: f3a9d4114a9a6c64e8b7cb16602222b3
